@@ -1,17 +1,16 @@
 // ********** Reverse a strinng ***************
 
-// function reverseString(str){
-//     return str.split('').reverse().join('');
-// }
+ function reverseString(str){
+     return str.split('').reverse().join('');
+ }
 
 // console.log(reverseString('Sujit'))
 
 
-// function reverString(str){
-//     return str.split("").reverse().join('');
-// }
+function reverseString(str){
+    return str.split('').reverse().join('');
+}
+console.log(reverseString('Hello'))
 
-// console.log(reverString('FAN'))
 
-
-// ********* Check for Palindrom ***********
+// ********* Check for Palindrome ***********
