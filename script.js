@@ -32,5 +32,16 @@ function findMissingNumber(arr, n){
     return totalSum -arrSum
 }
 
-console.log(findMissingNumber([1,2,3,5], 5))
+// console.log(findMissingNumber([1,2,3,5], 5))
+
+// *******Find the largest and Smallest number in an array***
+
+
+function largeandSmall(arr){
+    var largest = Math.max(...arr);
+    var smallest = Math.min(...arr);
+    return{largest, smallest}
+} 
+
+// console.log(largeandSmall([1,3,45,6,61,0]))
 
