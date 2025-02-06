@@ -40,19 +40,61 @@ function largeandSmall(arr) {
 
 // console.log(largeandSmall([1,3,45,6,61,0]))
 
-
-
 // ******* Two Sum Number ************
 
-function twoSum (nums, target){
-    for(let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++){
-            if(nums[i] + nums[j] === target){
-                return [i, j];
-            }
-        }
+function twoSum(nums, target) {
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] + nums[j] === target) {
+        return [i, j];
+      }
     }
-    return[];
+  }
+  return [];
 }
 
 // console.log(twoSum([2, 7, 10, 12], 9))
+
+// *********** Find duplicate number in an arrya **************
+
+function findduplicate(nums) {
+  let notebook = {};
+
+  for (let num of nums) {
+    if (notebook[num]) {
+      return num;
+    }
+    notebook[num] = true;
+  }
+
+  return -1;
+}
+
+// console.log(findduplicate([1,2,5,4,5]))
+
+// ************ Merge two sorted array ************
+
+function mergeSortedArrays(arr1, arr2) {
+  let mergedArray = [];
+  let i = 0, j = 0;
+
+  while (i < arr1.length && j < arr2.length) {
+    if (arr1[i] < arr2[j]) {
+      mergedArray.push(arr1[i]);
+      i++;
+    } else {
+      mergedArray.push(arr2[j]);
+      j++;
+    }
+  }
+
+  // Append remaining elements from arr1 or arr2
+
+  while (i < arr1.length) mergedArray.push(arr1[i++]);
+  while (j < arr2.length) mergedArray.push(arr2[j++]);
+
+  return mergedArray;
+}
+
+// console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); 
+
