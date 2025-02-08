@@ -89,7 +89,7 @@ function mergeSortedArrays(arr1, arr2) {
     }
   }
 
-  // Append remaining elements from arr1 or arr2
+  // Append thegit remaining elements from arr1 or arr2
 
   while (i < arr1.length) mergedArray.push(arr1[i++]);
   while (j < arr2.length) mergedArray.push(arr2[j++]);
