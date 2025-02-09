@@ -98,3 +98,5 @@ function mergeSortedArrays(arr1, arr2) {
 }
 
 // console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6]));
+
+// ********** Find the intersection of Two Arrays ***********
